@@ -13,5 +13,8 @@ TODOS
     + Wants to build something real
 
 + Chapter 1: First Element
-  + Input Box
-  + Output Text
+  + Features
+    + Input Box
+    + Output Text
+  + Step 1: Declare Your Element 
+  + Step 2: Make it Work
