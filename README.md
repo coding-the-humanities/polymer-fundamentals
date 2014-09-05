@@ -16,9 +16,10 @@ TODOS
   + Features
     + Input Box
     + Output Text
+
   + Step 1: Declare Your Element 
   + Step 2: Make it Work
-    + Import Polymer
+    + Set-up your environment 
       + Install Node
       + Install Bower
       + Import Platform
@@ -27,6 +28,7 @@ TODOS
         + bower install Polymer/polymer
       + Install Node-Static
         + npm install node-static -g 
-      + Add script-tag to page 
+      + Add script-tag for platform to page 
+      + Add import for polymer to page 
 
 + Chapter 2: Organize your Code
