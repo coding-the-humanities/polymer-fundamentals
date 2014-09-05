@@ -21,8 +21,9 @@ Table Of Contents
     + Input Box
     + Output Text
 
-  + Step 1: Declare Your Element 
-  + Step 2: Make it Work
+  + Step 1: Create an Index Page
+  + Step 2: Declare Your First Element 
+  + Step 3: Make it Work
     + Define First Element
       + use noscript
       + Resistance is Futile
