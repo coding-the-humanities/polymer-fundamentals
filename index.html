@@ -2,13 +2,19 @@
 <html>
   <head>
     <script src="./bower_components/platform/platform.js"></script>
-    <link href=".bower_components/polymer/polymer.html"/>
+    <link rel="import" href="./bower_components/polymer/polymer.html"/>
   </head>
   <body>
-    <universal-tag-machine></universal-tag-machine>
 
-    <polymer-element name="universal-tag-machine">
-      <p>Resistance is Futile!</p>
+    <universal-tag-machine></universal-tag-machine>
+    
+
+    <polymer-element name="universal-tag-machine" noscript>
+      <template>
+        <input value="{{message}}"></input>
+        <p>{{message}}</p>
+      </template>
     </polymer-element>
+
   </body>
 </html>

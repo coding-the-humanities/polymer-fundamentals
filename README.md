@@ -30,5 +30,14 @@ TODOS
         + npm install node-static -g 
       + Add script-tag for platform to page 
       + Add import for polymer to page 
+    + Define First Element
+      + use noscript
+      + Resistance is Futile
+    + Two-Way Databinding
 
-+ Chapter 2: Organize your Code
++ Chapter 2: Adding Simple Script
+  + Features
+    + Output List (instead of text)
+    + Display images from url's
+
++ Chapter 3: Organize your Code
