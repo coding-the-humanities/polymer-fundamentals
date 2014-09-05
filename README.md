@@ -2,6 +2,7 @@ Table Of Contents
 =================
 
 ## Introduction
+
   + What do we want to build
     + Universal Image Tag Machine
 
@@ -15,14 +16,21 @@ Table Of Contents
     + Wants to build something real
 
 ## Chapter 1: First Element
-  + Features
+
+ + Features
     + Input Box
     + Output Text
 
   + Step 1: Declare Your Element 
+
   + Step 2: Make it Work
+    + Define First Element
+      + Use noscript
+      + Resistance is Futile
+    + Two-Way Databinding
 
 ## Chapter 2: Adding Simple Script
+
   + Features
     + Output List (instead of text)
     + Display images from url's
@@ -30,6 +38,7 @@ Table Of Contents
 ## Chapter 3: Organize your Code
 
 ## Appendix A: Setting Up Your Environment
+
   + Install Node
   + Install Bower
   + Import Platform
@@ -40,16 +49,12 @@ Table Of Contents
     + npm install node-static -g 
   + Add script-tag for platform to page 
   + Add import for polymer to page 
-  + Define First Element
-    + use noscript
-    + Resistance is Futile
-  + Two-Way Databinding
 
 
 TODOS
 =====
 
-## Now
+## September 17
 
 + Write Chapter 1
 + Write Appendix 
