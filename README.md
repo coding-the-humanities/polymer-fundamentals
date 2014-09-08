@@ -41,9 +41,7 @@ Table Of Contents
 
   + Install Node
   + Install Bower
-  + Import Platform
-    + bower install Polymer/platform
-  + Install Polymer
+  + Import Platform/Install Polymer
     + bower install Polymer/polymer
   + Install Node-Static
     + npm install node-static -g 
