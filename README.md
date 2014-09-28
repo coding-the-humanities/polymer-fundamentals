@@ -17,6 +17,7 @@ Table Of Contents
 
 ## Chapter 1: First Element
 
+<<<<<<< HEAD
  + Features
     + Input Box
     + Output Text
@@ -26,6 +27,17 @@ Table Of Contents
   + Step 2: Make it Work
     + Define First Element
       + Use noscript
+=======
+  + Features
+    + Input Box
+    + Output Text
+
+  + Step 1: Create an Index Page
+  + Step 2: Declare Your First Element 
+  + Step 3: Make it Work
+    + Define First Element
+      + use noscript
+>>>>>>> cbdc41d37a8554d35e1092a4c8b5750dbbda19e0
       + Resistance is Futile
     + Two-Way Databinding
 
