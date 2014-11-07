@@ -15,6 +15,7 @@ Table Of Contents
     + No Knowledge of JavaScript or any other programming language
     + Wants to build something real
 
+
 ## Chapter 1: First Element
 
   + Features
@@ -29,13 +30,33 @@ Table Of Contents
       + Resistance is Futile
     + Two-Way Databinding
 
-## Chapter 2: Adding Simple Script
+
+## Chapter 2: Combining Multiple Elements
 
   + Features
-    + Output List (instead of text)
-    + Display images from url's
+    + Display a repeated images from url
 
-## Chapter 3: Organize your Code
+  + Step 1: Replace message with images 
+  + Step 2: Style image with style section
+  + Step 3: Separate Thumbnail into separate element
+    + Encapsulation
+    + Message Passing
+  + Step 4: Iterating over list with template-repeat
+    + Iteration
+    + Template Logic
+  + Step 5: Separate image row into separate element
+    + Styling element with Polymer attributes
+
+
+## Chapter 3: Adding Simple Script
+
+  + Features
+    + Adding Script
+    + Output List (instead of text)
+    + Pushing URLS onto list
+
+
+## Chapter 4: Organize your Code
 
 ## Appendix A: Setting Up Your Environment
 
@@ -52,11 +73,30 @@ Table Of Contents
 TODOS
 =====
 
+## October 13
+
++ Write Chapter 2
++ Features Chapter 4
+
+## Later
+
++ Write Rest
+
+
+DONE
+====
+
 ## September 17
 
 + Write Chapter 1
 + Write Appendix 
 
-## Later
+## October 1
 
-+ Write Rest 
++ Rewrite Chapter 1
+
++ Write the Code Chapter 2
++ Think of a Title
++ Features Chapter 3
+
++ Think of a Title: Polymer Fundamentals
