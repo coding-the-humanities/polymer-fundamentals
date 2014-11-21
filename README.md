@@ -5,15 +5,15 @@ Table Of Contents
 
   + What do we want to build
     + Universal Image Tag Machine
-    
+
   + What do we want to build it with
-  	 + Web components
-  	 	- what web components are and how they differ from previous iterations of web technology
-  	 	+ Polymer
-  	 	- what attitudes does polymer take towards that idea
+    + Web components
+      + what web components are and how they differ from previous iterations of web technology
+    + Polymer
+      + what attitudes does polymer take towards that idea
 
   + What are our Goals / Values
-    + Open Source 
+    + Open Source
     + Declarative Programming
 
   + Audience:
@@ -21,22 +21,26 @@ Table Of Contents
     + No Knowledge of JavaScript or any other programming language
     + Wants to build something real
 
+
 ## Chapter 0: What You Already Know
 
-	+ web technologies, or... languages?
-	
-	+ HTML
-		+ the document
-		+ as a concept: 
-			+ has a beginning, has an ending, has contents that are structured
-		+ analyze the actual name
-			+ hypertext
-			+ markup
-			+ language
-	+ CSS
-		+ cascading = context
-	+ drawing attention to what you are actually (discursively) doing when you write a .html document
-		
+  + web technologies, or... languages?
+
+  + HTML
+    + the document
+      + as a concept:
+      + has a beginning, has an ending, has contents that are structured
+    + analyze the actual name
+      + hypertext
+      + markup
+    + language
+
+  + CSS
+    + cascading = context
+
+  + drawing attention to what you are actually (discursively) 
+    doing when you write a .html document
+
 
 ## Chapter 1: First Element
 

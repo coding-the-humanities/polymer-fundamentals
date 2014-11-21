@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="./bower_components/platform/platform.js"></script>
+    <link rel="import" href="./bower_components/polymer/polymer.html"/>
+  </head>
+  <body>
+
+    <universal-tag-machine></universal-tag-machine>
+
+    <polymer-element name="universal-tag-machine" noscript>
+      <template>
+        <input value="{{url}}"></input>
+        <utm-image-row url="{{url}}"></utm-image-row>
+      </template>
+    </polymer-element>
+
+    <polymer-element name="utm-image-row" attributes="url" noscript>
+      <template>
+        <section horizontal layout>
+          <template repeat="{{number in [1,2,3]}}">
+            <utm-thumbnail url="{{url}}"></utm-thumbnail>
+          </template>
+        </section>
+      </template>
+    </polymer-element>
+
+    <polymer-element name="utm-thumbnail" attributes="url" noscript>
+      <template>
+        <style>
+          img {
+            display: block;
+            width: 100px;
+          }
+        </style>
+        <img src="{{url}}"></img>
+      </template>
+    </polymer-element>
+
+  </body>
+</html>
