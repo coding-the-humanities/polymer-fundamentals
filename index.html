@@ -8,21 +8,41 @@
 
     <universal-tag-machine></universal-tag-machine>
 
-    <polymer-element name="universal-tag-machine" noscript>
+    <polymer-element name="universal-tag-machine">
       <template>
-        <input value="{{url}}"></input>
-        <utm-image-row url="{{url}}"></utm-image-row>
+        <input value="{{inputString}}"></input>
+        <button on-click="{{submitUrl}}">Submit Url</button>
+        <utm-image-row url="{{outputUrl}}"></utm-image-row>
       </template>
+      <script>
+        Polymer('universal-tag-machine', {
+          submitUrl: function(){
+            this.outputUrl = this.inputString;
+            this.inputString = '';
+          }
+        });
+      </script>
     </polymer-element>
 
-    <polymer-element name="utm-image-row" attributes="url" noscript>
+    <polymer-element name="utm-image-row" attributes="url">
       <template>
         <section horizontal layout>
-          <template repeat="{{number in [1,2,3]}}">
-            <utm-thumbnail url="{{url}}"></utm-thumbnail>
+          <template repeat="{{image in urlList}}">
+            <utm-thumbnail url="{{image}}"></utm-thumbnail>
           </template>
         </section>
       </template>
+      <script>
+        Polymer('utm-image-row', {
+          urlList: [],
+          urlChanged: function(){
+            if(this.url){
+              this.urlList.push(this.url);
+            }
+          }
+        });
+      </script>
+
     </polymer-element>
 
     <polymer-element name="utm-thumbnail" attributes="url" noscript>
@@ -31,6 +51,7 @@
           img {
             display: block;
             width: 100px;
+            margin: 10px;
           }
         </style>
         <img src="{{url}}"></img>
