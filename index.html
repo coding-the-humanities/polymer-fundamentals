@@ -8,6 +8,46 @@
 
     <universal-tag-machine></universal-tag-machine>
 
+    <polymer-element name="utm-thumbnail" attributes="urlin" noscript>
+      <template>
+        <style>
+          img {
+            display: block;
+            width: 100px;
+            margin: 10px;
+          }
+        </style>
+        <img src="{{urlin}}"></img>
+      </template>
+    </polymer-element>
+
+    <polymer-element name="utm-image-row"> <!-- attributes="url"> -->
+      <template>
+        <section horizontal layout>
+          <template repeat="{{image in urlList}}">
+            <utm-thumbnail urlin="{{image}}"></utm-thumbnail>
+          </template>
+        </section>
+      </template>
+      <script>
+        Polymer('utm-image-row', {
+          urlList: [],
+          publish: {
+            url: ''
+          },
+          urlChanged: function(){
+            if(this.url){
+              this.urlList.push(this.url);
+              this.url = '';
+            }
+          },
+          ready: function(){
+            console.log(this.url);
+          }
+        });
+      </script>
+    </polymer-element>
+
     <polymer-element name="universal-tag-machine">
       <template>
         <input value="{{inputString}}"></input>
@@ -19,44 +59,10 @@
           submitUrl: function(){
             this.outputUrl = this.inputString;
             this.inputString = '';
-          }
+          },
+          ready: function() { console.log("ready"); }
         });
       </script>
     </polymer-element>
-
-    <polymer-element name="utm-image-row" attributes="url">
-      <template>
-        <section horizontal layout>
-          <template repeat="{{image in urlList}}">
-            <utm-thumbnail url="{{image}}"></utm-thumbnail>
-          </template>
-        </section>
-      </template>
-      <script>
-        Polymer('utm-image-row', {
-          urlList: [],
-          urlChanged: function(){
-            if(this.url){
-              this.urlList.push(this.url);
-            }
-          }
-        });
-      </script>
-
-    </polymer-element>
-
-    <polymer-element name="utm-thumbnail" attributes="url" noscript>
-      <template>
-        <style>
-          img {
-            display: block;
-            width: 100px;
-            margin: 10px;
-          }
-        </style>
-        <img src="{{url}}"></img>
-      </template>
-    </polymer-element>
-
   </body>
 </html>
